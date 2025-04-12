@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "demomod159",
+	"version": "${version}",
+	"name": "DemoMod159",
+	"description": "OBS全国可飞",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/demomod159/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"asia.a951.DemoMod159"
+		],
+		"client": [
+			"asia.a951.DemoMod159Client"
+		],
+		"fabric-datagen": [
+			"asia.a951.DemoMod159DataGenerator"
+		]
+	},
+	"mixins": [
+		"demomod159.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
