@@ -1,8 +1,9 @@
 package asia.a951;
 
+import asia.a951.registry.ModItemGroup;
 import asia.a951.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
-
+import net.minecraft.item.ItemConvertible;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,6 +22,7 @@ public class DemoMod159 implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello world!");
+		ModItemGroup.registerModItemGroup();
 		ModItems.registerItems();
 	}
 }
