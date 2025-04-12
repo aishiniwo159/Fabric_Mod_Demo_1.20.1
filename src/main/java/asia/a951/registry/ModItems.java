@@ -16,6 +16,8 @@ public class ModItems { //这里新建物品
             new Item(new FabricItemSettings()));
     public static final Item Loser_obs = registerItem("loser_obs",  //添加物品Loser OBS
             new Item(new FabricItemSettings()));
+    public static final Item PCO = registerItem("pink_cat_ouo",  //添加物品PCO
+            new Item(new FabricItemSettings()));
 
     public static Item registerItem(String name, Item item, RegistryKey<ItemGroup>... itemGroups){
         Item registerItem = Registry.register(Registries.ITEM,new Identifier(DemoMod159.MOD_ID,name),item);
