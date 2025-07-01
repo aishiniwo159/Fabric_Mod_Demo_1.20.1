@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 //添加一个自己的物品栏栏位
 public class ModItemGroup {
-        public static final RegistryKey<ItemGroup> VCX_GROUP = register("vcx_froup");
+        public static final RegistryKey<ItemGroup> VCX_GROUP = register("vcx_group");
         private static RegistryKey<ItemGroup> register(String id) {
             return RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(DemoMod159.MOD_ID, id));
         }
@@ -40,6 +40,7 @@ public class ModItemGroup {
                             entries.add(ModItems.BG);
                             entries.add(ModItems.str);
                             entries.add(ModItems.PCO);
+                            entries.add(ModItems.kim);
                         })
                         .build());
     }

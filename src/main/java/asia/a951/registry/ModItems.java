@@ -3,13 +3,19 @@ package asia.a951.registry;
 
 //下面是调用的import
 import asia.a951.DemoMod159;
+import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
+import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.loot.LootPool;
+import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -32,6 +38,7 @@ public class ModItems {
     public static final Item soda = registerItem("soda",new Item(new FabricItemSettings()));
     public static final Item shuisheng = registerItem("shuisheng",new Item(new FabricItemSettings()));
     public static final Item shenshou = registerItem("shenshou",new Item(new FabricItemSettings()));
+    public static final Item kim = registerItem("kim",new Item(new FabricItemSettings()));
     public static Item registerItem(String name, Item item, RegistryKey<ItemGroup>... itemGroups){
         Item registerItem = Registry.register(Registries.ITEM,new Identifier(DemoMod159.MOD_ID,name),item);
         for (RegistryKey<ItemGroup> itemGroup:itemGroups){
@@ -50,7 +57,12 @@ public class ModItems {
     //以下是把上面添加的物品添加到指定一个栏位
     public static void registerItems(){
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemToItemGroup);
-        DemoMod159.LOGGER.debug("Registering mod items for" + DemoMod159.MOD_ID);
+        DemoMod159.LOGGER.debug("为mod添加物品" + DemoMod159.MOD_ID);
     }
 }
+
+
+
+
 //1324的作用：获得书与笔 并且名字为翼张答题卡 | 博哥可以和风油精合成获得烧鸡(BUFF名称:积极热 效果:速度+凋零+脚底放火) | 水系的作用:右键击杀10方块内的所有马
+//苏打的作用:合成3瓶可乐 可乐功能待定
