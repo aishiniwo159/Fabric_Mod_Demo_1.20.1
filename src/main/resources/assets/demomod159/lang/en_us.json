@@ -1,13 +1,17 @@
 {
-  "itemGroup.demomod159.obs_lll": "demo_mod",
-  "item.demomod159.normal_obs": "normal_OBS",
+  "itemGroup.demomod159.obs_lll": "Demo_mod",
+  "item.demomod159.normal_obs": "Normal_OBS",
   "item.demomod159.loser_obs": "loser_OBS",
-  "item.demomod159.pink_cat_ouo": "pink_cat_ouo",
+  "item.demomod159.pink_cat_ouo": "Pink_cat_ouo",
   "item.demomod159.xixi": "XiXi",
   "item.demomod159.159": "159",
   "item.demomod159.1324": "1324",
   "item.demomod159.pp": "PLSGO",
   "item.demomod159.sx": "SX",
-  "item.demomod159.fyj": "essential",
-  "item.demomod159.bg": "ZSD_BG"
+  "item.demomod159.fyj": "Essential",
+  "item.demomod159.bg": "ZSD_BG",
+  "item.demomod159.str": "STR",
+  "item.demomod159.shuisheng": "ShuiSheng",
+  "item.demomod159.shenshou": "ShenShou",
+  "item.demomod159.soda": "Soda"
 }

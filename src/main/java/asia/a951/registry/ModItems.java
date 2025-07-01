@@ -31,6 +31,14 @@ public class ModItems { //这里新建物品
             new Item(new FabricItemSettings()));
     public static final Item BG = registerItem("bg",
             new Item(new FabricItemSettings()));
+    public static final Item str = registerItem("str",
+            new Item(new FabricItemSettings()));
+    public static final Item soda = registerItem("soda",
+            new Item(new FabricItemSettings()));
+    public static final Item shuisheng = registerItem("shuisheng",
+            new Item(new FabricItemSettings()));
+    public static final Item shenshou = registerItem("shenshou",
+            new Item(new FabricItemSettings()));
     public static Item registerItem(String name, Item item, RegistryKey<ItemGroup>... itemGroups){
         Item registerItem = Registry.register(Registries.ITEM,new Identifier(DemoMod159.MOD_ID,name),item);
         for (RegistryKey<ItemGroup> itemGroup:itemGroups){
@@ -43,3 +51,4 @@ public class ModItems { //这里新建物品
         DemoMod159.LOGGER.debug("Registering mod items for" + DemoMod159.MOD_ID);
     }
 }
+//1324的作用：获得书与笔 并且名字为翼张答题卡 | 博哥可以和风油精合成获得烧鸡(BUFF名称:积极热 效果:速度+凋零+脚底放火) | 水系的作用:右键击杀10方块内的所有马
