@@ -21,8 +21,8 @@ public class DemoMod159 implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello world!");
-		ModItemGroup.registerModItemGroup();
+		LOGGER.info("VCX!启动!");
+		ModItemGroup.registerGroups();
 		ModItems.registerItems();
 	}
 }
