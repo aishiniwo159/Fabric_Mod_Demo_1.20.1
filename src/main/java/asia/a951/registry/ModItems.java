@@ -25,6 +25,12 @@ public class ModItems { //这里新建物品
             new Item(new FabricItemSettings()));
     public static final Item ywj = registerItem("159",
             new Item(new FabricItemSettings()));
+    public static final Item SX = registerItem("sx",
+            new Item(new FabricItemSettings()));
+    public static final Item FYJ = registerItem("fyj",
+            new Item(new FabricItemSettings()));
+    public static final Item BG = registerItem("bg",
+            new Item(new FabricItemSettings()));
     public static Item registerItem(String name, Item item, RegistryKey<ItemGroup>... itemGroups){
         Item registerItem = Registry.register(Registries.ITEM,new Identifier(DemoMod159.MOD_ID,name),item);
         for (RegistryKey<ItemGroup> itemGroup:itemGroups){
