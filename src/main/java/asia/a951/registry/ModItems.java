@@ -17,7 +17,14 @@ public class ModItems { //这里新建物品
             new Item(new FabricItemSettings()));
     public static final Item PCO = registerItem("pink_cat_ouo",  //添加物品PCO
             new Item(new FabricItemSettings()));
-
+    public static final Item xixi= registerItem("xixi",  //添加物品XIXI
+            new Item(new FabricItemSettings()));
+    public static final Item yses = registerItem("1324",
+            new Item(new FabricItemSettings()));
+    public static final Item pp = registerItem("pp",
+            new Item(new FabricItemSettings()));
+    public static final Item ywj = registerItem("159",
+            new Item(new FabricItemSettings()));
     public static Item registerItem(String name, Item item, RegistryKey<ItemGroup>... itemGroups){
         Item registerItem = Registry.register(Registries.ITEM,new Identifier(DemoMod159.MOD_ID,name),item);
         for (RegistryKey<ItemGroup> itemGroup:itemGroups){
